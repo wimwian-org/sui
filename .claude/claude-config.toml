@@ -1,0 +1,53 @@
+# claude-config.toml — component-specific configuration.
+#
+# Every `.claude/*.md` doc and the top-level `CLAUDE.md` in this template are GENERIC:
+# they describe the smuit bit conventions using `<name>` / `--<name>-*` placeholders and
+# the tab set (`smuit-tabs`) as the worked reference example. The concrete, per-component
+# values that vary between libraries live HERE and nowhere else.
+#
+# When generating a new component, copy the whole `.claude/` directory into the new repo
+# and fill in this file. Read it first — it is the source of truth for everything the docs
+# leave as a placeholder.
+
+[component]
+name         = "<name>"            # the slug in @smuit/smuit-<name> and the smuit-<name> repo
+package      = "@smuit/smuit-<name>"
+display_name = "<Component>"       # the exported symbol / human name (e.g. "Tabs")
+kind         = "compound"          # compound | flat | action | tokens
+summary      = "<one-line description of what this bit is>"
+
+[package]
+# These values populate the matching fields in package.json, which ships with
+# `<name>` placeholders. Fill them here (the single source of truth) and substitute
+# into package.json when scaffolding — do not hand-edit package.json's identity
+# fields ad hoc. `version` is owned by changesets after the first release.
+version            = "0.0.0"
+description        = "<one-line npm description — what this bit is + its headline features>"
+keywords           = ["svelte", "svelte5", "smuit"]   # + component-specific terms
+repository         = "git+https://github.com/smuit/smuit-<name>.git"
+# Extra @smuit/* sibling bits this component depends on at runtime (pulled from
+# GitHub Packages). Empty for a standalone bit; e.g. smuit-tabs lists "@smuit/smuit-list".
+# Each name listed here is also added to pnpm-workspace.yaml `trustPolicyExclude`.
+sibling_deps       = []
+
+[source]
+lib_dir       = "src/lib/<name>"            # compound-part directory, or "src/lib" for a flat bit
+entry         = "src/lib/index.ts"          # public entry point
+component_css = "src/lib/<name>.css"         # token-driven component CSS (@layer components)
+variants      = "src/lib/<name>.variants.ts" # tailwind-variants slot/variant config ("" if none)
+design_spec   = "<name>-design.md"           # authoritative design markdown ("" if none)
+parts         = []                           # compound part names, e.g. ["Root","List","Trigger","Content"]
+
+[tokens]
+# The component-local token namespace declared on the bit's root class inside `component_css`.
+# Everything the bit styles resolves through these, which in turn read the smuit-theme tokens.
+prefix = "--<name>-"
+
+[distribution]
+registry     = "https://npm.pkg.github.com"
+history_note = ""   # e.g. "≤ 0.2.0 shipped as @wimwian-org/<name> from wimwian-org/smuit"
+
+[references]
+# Design references the design doc was synthesised from. Credited in the README
+# Acknowledgements — never added to package.json as dependencies.
+credits = []

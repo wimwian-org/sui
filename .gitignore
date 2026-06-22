@@ -1,0 +1,15 @@
+node_modules/
+./t2t/
+/.idea/
+dist/
+.env
+*.local
+.DS_Store
+*.tsbuildinfo
+coverage/
+coverage-browser/
+coverage-e2e/
+playwright-report/
+test-results/
+.turbo/
+.svelte-kit/
