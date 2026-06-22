@@ -1,0 +1,18 @@
+name: Guard dev
+on:
+  pull_request:
+    branches: [dev]
+
+jobs:
+  check-source-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enforce feature/bugfix prefix
+        run: |
+          branch="${{ github.head_ref }}"
+          if [[ "$branch" =~ ^(feature|bugfix)/ ]]; then
+            echo "Branch '$branch' is allowed."
+          else
+            echo "::error::PRs to dev must come from feature/* or bugfix/* branches. Got: $branch"
+            exit 1
+          fi

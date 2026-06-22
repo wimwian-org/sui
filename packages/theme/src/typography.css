@@ -1,0 +1,88 @@
+/* Typography utilities — heading, subtitle, body, and code scales */
+
+@utility heading-3xl {
+  font-size: 3rem;        /* 48px */
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+@utility heading-2xl {
+  font-size: 2.25rem;     /* 36px */
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+@utility heading-xl {
+  font-size: 1.875rem;    /* 30px */
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+}
+
+@utility heading-lg {
+  font-size: 1.5rem;      /* 24px */
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+@utility heading-md {
+  font-size: 1.25rem;     /* 20px */
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  line-height: 1.3;
+}
+
+@utility heading-sm {
+  font-size: 1.125rem;    /* 18px */
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+@utility subtitle-xl {
+  font-size: 1.5rem;      /* 24px */
+  font-weight: 600;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+}
+
+@utility subtitle-lg {
+  font-size: 1.25rem;     /* 20px */
+  font-weight: 600;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+}
+
+@utility subtitle-md {
+  font-size: 1rem;        /* 16px */
+  font-weight: 600;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+@utility subtitle-sm {
+  font-size: 0.875rem;    /* 14px */
+  font-weight: 600;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+@utility subtitle-xs {
+  font-size: 0.75rem;     /* 12px */
+  font-weight: 600;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+
+@utility small-caps {
+  text-transform: capitalize;
+  font-variant-caps: small-caps;
+}

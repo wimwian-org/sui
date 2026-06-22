@@ -1,0 +1,25 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - name: format
+      glob: '*.{js,mjs,cjs,ts,svelte,css,json,md,html}'
+      run: pnpm prettier --write {staged_files}
+      stage_fixed: true
+    - name: lint
+      glob: '*.{js,mjs,cjs,ts,svelte}'
+      run: pnpm eslint {staged_files}
+
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: pnpm commitlint --edit {1}
+
+post-commit:
+  jobs:
+    - name: auto-changeset
+      skip:
+        - merge
+        - rebase
+        - ref: master
+        - ref: dev
+      run: node scripts/auto-changeset.mjs

@@ -1,0 +1,91 @@
+/* Raw palette tokens — consumed by @layer utilities and component CSS via @reference */
+
+@theme static {
+  /* ── Mono (21 steps, 0–1000 in 50-step increments, L from 1→0) ── */
+  --color-mono-0: oklch(1 0 0);
+  --color-mono-50: oklch(0.95 0 0);
+  --color-mono-100: oklch(0.9 0 0);
+  --color-mono-150: oklch(0.85 0 0);
+  --color-mono-200: oklch(0.8 0 0);
+  --color-mono-250: oklch(0.75 0 0);
+  --color-mono-300: oklch(0.7 0 0);
+  --color-mono-350: oklch(0.65 0 0);
+  --color-mono-400: oklch(0.6 0 0);
+  --color-mono-450: oklch(0.55 0 0);
+  --color-mono-500: oklch(0.5 0 0);
+  --color-mono-550: oklch(0.45 0 0);
+  --color-mono-600: oklch(0.4 0 0);
+  --color-mono-650: oklch(0.35 0 0);
+  --color-mono-700: oklch(0.3 0 0);
+  --color-mono-750: oklch(0.25 0 0);
+  --color-mono-800: oklch(0.2 0 0);
+  --color-mono-850: oklch(0.15 0 0);
+  --color-mono-900: oklch(0.1 0 0);
+  --color-mono-950: oklch(0.05 0 0);
+  --color-mono-1000: oklch(0 0 0);
+
+  /* ── Primary (blue, H 236) — bell-tapered chroma, base 0.16 ── */
+  --color-primary-50: oklch(0.97 0.016 236);
+  --color-primary-100: oklch(0.88 0.035 236);
+  --color-primary-200: oklch(0.78 0.067 236);
+  --color-primary-300: oklch(0.69 0.104 236);
+  --color-primary-400: oklch(0.59 0.141 236);
+  --color-primary-500: oklch(0.5 0.16 236);
+  --color-primary-600: oklch(0.41 0.152 236);
+  --color-primary-700: oklch(0.31 0.125 236);
+  --color-primary-800: oklch(0.22 0.088 236);
+  --color-primary-900: oklch(0.12 0.048 236);
+  --color-primary-950: oklch(0.03 0.016 236);
+
+  /* ── Secondary (purple, H 296) — bell-tapered chroma, base 0.16 ── */
+  --color-secondary-50: oklch(0.97 0.016 296);
+  --color-secondary-100: oklch(0.88 0.035 296);
+  --color-secondary-200: oklch(0.78 0.067 296);
+  --color-secondary-300: oklch(0.69 0.104 296);
+  --color-secondary-400: oklch(0.59 0.141 296);
+  --color-secondary-500: oklch(0.5 0.16 296);
+  --color-secondary-600: oklch(0.41 0.152 296);
+  --color-secondary-700: oklch(0.31 0.125 296);
+  --color-secondary-800: oklch(0.22 0.088 296);
+  --color-secondary-900: oklch(0.12 0.048 296);
+  --color-secondary-950: oklch(0.03 0.016 296);
+
+  /* ── Error (red, H 25) — bell-tapered chroma, base 0.17 ── */
+  --color-error-50: oklch(0.97 0.017 25);
+  --color-error-100: oklch(0.88 0.037 25);
+  --color-error-200: oklch(0.78 0.071 25);
+  --color-error-300: oklch(0.69 0.111 25);
+  --color-error-400: oklch(0.59 0.15 25);
+  --color-error-500: oklch(0.5 0.17 25);
+  --color-error-600: oklch(0.41 0.162 25);
+  --color-error-700: oklch(0.31 0.133 25);
+  --color-error-800: oklch(0.22 0.094 25);
+  --color-error-900: oklch(0.12 0.051 25);
+  --color-error-950: oklch(0.03 0.017 25);
+
+  /* ── Warning (amber, H 86 base; 500 re-anchored to H 105) — base 0.17 ── */
+  --color-warning-50: oklch(0.97 0.017 86);
+  --color-warning-100: oklch(0.88 0.037 86);
+  --color-warning-200: oklch(0.78 0.071 86);
+  --color-warning-300: oklch(0.69 0.111 86);
+  --color-warning-400: oklch(0.59 0.15 86);
+  --color-warning-500: oklch(0.5 0.17 105);
+  --color-warning-600: oklch(0.41 0.162 86);
+  --color-warning-700: oklch(0.31 0.133 86);
+  --color-warning-800: oklch(0.22 0.094 86);
+  --color-warning-900: oklch(0.12 0.051 86);
+  --color-warning-950: oklch(0.03 0.017 86);
+
+  /* ── Success (green, H 162) — bell-tapered chroma, base 0.17 ── */
+  --color-success-50: oklch(0.97 0.017 162);
+  --color-success-100: oklch(0.88 0.037 162);
+  --color-success-200: oklch(0.78 0.071 162);
+  --color-success-300: oklch(0.69 0.111 162);
+  --color-success-400: oklch(0.59 0.15 162);
+  --color-success-500: oklch(0.5 0.17 162);
+  --color-success-600: oklch(0.41 0.162 162);
+  --color-success-700: oklch(0.31 0.133 162);
+  --color-success-800: oklch(0.22 0.094 162);
+  --color-success-900: oklch(0.12 0.051 162);
+  --color-success-950: oklch(0.03 0.017 162);
+}

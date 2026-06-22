@@ -1,0 +1,101 @@
+/* Tint utilities — retint --color-c-* and --surface-* to a chromatic palette */
+
+@utility primary {
+  --color-c-0: var(--L, var(--color-primary-50)) var(--D, var(--color-primary-950));
+  --color-c-50: var(--L, var(--color-primary-50)) var(--D, var(--color-primary-950));
+  --color-c-100: var(--L, var(--color-primary-100)) var(--D, var(--color-primary-900));
+  --color-c-200: var(--L, var(--color-primary-200)) var(--D, var(--color-primary-800));
+  --color-c-300: var(--L, var(--color-primary-300)) var(--D, var(--color-primary-700));
+  --color-c-400: var(--L, var(--color-primary-400)) var(--D, var(--color-primary-600));
+  --color-c-500: var(--color-primary-500);
+  --color-c-600: var(--L, var(--color-primary-600)) var(--D, var(--color-primary-400));
+  --color-c-700: var(--L, var(--color-primary-700)) var(--D, var(--color-primary-300));
+  --color-c-800: var(--L, var(--color-primary-800)) var(--D, var(--color-primary-200));
+  --color-c-900: var(--L, var(--color-primary-900)) var(--D, var(--color-primary-100));
+  --color-c-950: var(--L, var(--color-primary-950)) var(--D, var(--color-primary-50));
+  --color-c-1000: var(--L, var(--color-primary-950)) var(--D, var(--color-primary-50));
+  --surface-bg: var(--surface-primary-bg);
+  --surface-fg: var(--surface-primary-fg);
+  --surface-border: var(--surface-primary-border);
+  --surface-border-bold: var(--surface-primary-accent);
+}
+
+@utility secondary {
+  --color-c-0: var(--L, var(--color-secondary-50)) var(--D, var(--color-secondary-950));
+  --color-c-50: var(--L, var(--color-secondary-50)) var(--D, var(--color-secondary-950));
+  --color-c-100: var(--L, var(--color-secondary-100)) var(--D, var(--color-secondary-900));
+  --color-c-200: var(--L, var(--color-secondary-200)) var(--D, var(--color-secondary-800));
+  --color-c-300: var(--L, var(--color-secondary-300)) var(--D, var(--color-secondary-700));
+  --color-c-400: var(--L, var(--color-secondary-400)) var(--D, var(--color-secondary-600));
+  --color-c-500: var(--color-secondary-500);
+  --color-c-600: var(--L, var(--color-secondary-600)) var(--D, var(--color-secondary-400));
+  --color-c-700: var(--L, var(--color-secondary-700)) var(--D, var(--color-secondary-300));
+  --color-c-800: var(--L, var(--color-secondary-800)) var(--D, var(--color-secondary-200));
+  --color-c-900: var(--L, var(--color-secondary-900)) var(--D, var(--color-secondary-100));
+  --color-c-950: var(--L, var(--color-secondary-950)) var(--D, var(--color-secondary-50));
+  --color-c-1000: var(--L, var(--color-secondary-950)) var(--D, var(--color-secondary-50));
+  --surface-bg: var(--surface-secondary-bg);
+  --surface-fg: var(--surface-secondary-fg);
+  --surface-border: var(--surface-secondary-border);
+  --surface-border-bold: var(--surface-secondary-accent);
+}
+
+@utility error {
+  --color-c-0: var(--L, var(--color-error-50)) var(--D, var(--color-error-950));
+  --color-c-50: var(--L, var(--color-error-50)) var(--D, var(--color-error-950));
+  --color-c-100: var(--L, var(--color-error-100)) var(--D, var(--color-error-900));
+  --color-c-200: var(--L, var(--color-error-200)) var(--D, var(--color-error-800));
+  --color-c-300: var(--L, var(--color-error-300)) var(--D, var(--color-error-700));
+  --color-c-400: var(--L, var(--color-error-400)) var(--D, var(--color-error-600));
+  --color-c-500: var(--color-error-500);
+  --color-c-600: var(--L, var(--color-error-600)) var(--D, var(--color-error-400));
+  --color-c-700: var(--L, var(--color-error-700)) var(--D, var(--color-error-300));
+  --color-c-800: var(--L, var(--color-error-800)) var(--D, var(--color-error-200));
+  --color-c-900: var(--L, var(--color-error-900)) var(--D, var(--color-error-100));
+  --color-c-950: var(--L, var(--color-error-950)) var(--D, var(--color-error-50));
+  --color-c-1000: var(--L, var(--color-error-950)) var(--D, var(--color-error-50));
+  --surface-bg: var(--surface-error-bg);
+  --surface-fg: var(--surface-error-fg);
+  --surface-border: var(--surface-error-border);
+  --surface-border-bold: var(--surface-error-accent);
+}
+
+@utility warning {
+  --color-c-0: var(--L, var(--color-warning-50)) var(--D, var(--color-warning-950));
+  --color-c-50: var(--L, var(--color-warning-50)) var(--D, var(--color-warning-950));
+  --color-c-100: var(--L, var(--color-warning-100)) var(--D, var(--color-warning-900));
+  --color-c-200: var(--L, var(--color-warning-200)) var(--D, var(--color-warning-800));
+  --color-c-300: var(--L, var(--color-warning-300)) var(--D, var(--color-warning-700));
+  --color-c-400: var(--L, var(--color-warning-400)) var(--D, var(--color-warning-600));
+  --color-c-500: var(--color-warning-500);
+  --color-c-600: var(--L, var(--color-warning-600)) var(--D, var(--color-warning-400));
+  --color-c-700: var(--L, var(--color-warning-700)) var(--D, var(--color-warning-300));
+  --color-c-800: var(--L, var(--color-warning-800)) var(--D, var(--color-warning-200));
+  --color-c-900: var(--L, var(--color-warning-900)) var(--D, var(--color-warning-100));
+  --color-c-950: var(--L, var(--color-warning-950)) var(--D, var(--color-warning-50));
+  --color-c-1000: var(--L, var(--color-warning-950)) var(--D, var(--color-warning-50));
+  --surface-bg: var(--surface-warning-bg);
+  --surface-fg: var(--surface-warning-fg);
+  --surface-border: var(--surface-warning-border);
+  --surface-border-bold: var(--surface-warning-accent);
+}
+
+@utility success {
+  --color-c-0: var(--L, var(--color-success-50)) var(--D, var(--color-success-950));
+  --color-c-50: var(--L, var(--color-success-50)) var(--D, var(--color-success-950));
+  --color-c-100: var(--L, var(--color-success-100)) var(--D, var(--color-success-900));
+  --color-c-200: var(--L, var(--color-success-200)) var(--D, var(--color-success-800));
+  --color-c-300: var(--L, var(--color-success-300)) var(--D, var(--color-success-700));
+  --color-c-400: var(--L, var(--color-success-400)) var(--D, var(--color-success-600));
+  --color-c-500: var(--color-success-500);
+  --color-c-600: var(--L, var(--color-success-600)) var(--D, var(--color-success-400));
+  --color-c-700: var(--L, var(--color-success-700)) var(--D, var(--color-success-300));
+  --color-c-800: var(--L, var(--color-success-800)) var(--D, var(--color-success-200));
+  --color-c-900: var(--L, var(--color-success-900)) var(--D, var(--color-success-100));
+  --color-c-950: var(--L, var(--color-success-950)) var(--D, var(--color-success-50));
+  --color-c-1000: var(--L, var(--color-success-950)) var(--D, var(--color-success-50));
+  --surface-bg: var(--surface-success-bg);
+  --surface-fg: var(--surface-success-fg);
+  --surface-border: var(--surface-success-border);
+  --surface-border-bold: var(--surface-success-accent);
+}
